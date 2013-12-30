@@ -12,6 +12,10 @@ a {
   font-weight: bold;
 }
 
+a:hover{
+  color: #2D4D5E;
+}
+
 p {
   line-height: 1.5em; 
 }
@@ -25,13 +29,27 @@ h2 {
   color: #2F694A;
 }
 
-#logo h1{
-  margin: 17.283% 0 19.75% 4.94%; /* containter is 405px */
+/* header */
+
+.header{
+  margin-bottom: 6%;
 }
 
-a:hover{
-  color: #2D4D5E;
+#logo h1{
+  margin: 17.283% 0 0 0; /* containter is 405px */
 }
+
+/* introduction */
+
+#intro {
+  margin: 0px 0 10.54% 0;
+}
+
+.text_container{
+  width: 90%;
+}
+
+/* nav */
 
 ul.nav {
   margin: 13.91% 0 13.91% 0;
@@ -54,13 +72,6 @@ ul.nav li a:hover{
   color: #2D4D5E
 }
 
-#intro {
-  margin: 0px 0 10.54% 0;
-}
-
-.text_container{
-  width: 90%;
-}
 /* images */
 
 .portrait img {
@@ -85,6 +96,8 @@ ul.nav li a:hover{
   width: 12.435%;
   margin-top: 6.476%;
 }
+
+/* footer */
 
 #copyright {
   border-top: 8px solid #946F43;
