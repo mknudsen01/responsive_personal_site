@@ -29,6 +29,10 @@ h2 {
   color: #2F694A;
 }
 
+ul li{
+  list-style: none;
+}
+
 /* header */
 
 .header{
