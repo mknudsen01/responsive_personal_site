@@ -35,7 +35,7 @@ h2 {
   margin-bottom: 6%;
 }
 
-#logo h1{
+.logo h1{
   margin: 17.283% 0 0 0; /* containter is 405px */
 }
 
@@ -99,10 +99,106 @@ ul.nav li a:hover{
 
 /* footer */
 
-#copyright {
+.copyright {
   border-top: 8px solid #946F43;
   padding: 1.0% 0;
   margin: 1.5% 0;
   text-align: center;
 }
 
+
+/*---------------*/
+/* media queries */
+/* at 825, ditch the two columns. */
+@media screen and (max-width: 825px){
+  .grid_1,
+  .grid_2,
+  .grid_3,
+  .grid_4,
+  .grid_5,
+  .grid_6,
+  .grid_7,
+  .grid_8,
+  .grid_9,
+  .grid_10,
+  .grid_11,
+  .grid_12 {
+    width: 100%;
+  }
+
+  .logo{
+  text-align: center;
+  }
+
+  .logo h1{
+    font-size: 1.6em;
+  }
+
+  .portrait img{
+    width: 60%;
+    margin: 0 19% 5% 19%;
+    max-width: 400px;
+  }
+
+ .loves img, .quirk img {
+    width: 70%;
+    margin: 0 14%;
+    max-width: 400px;
+  }
+
+  .home{
+    width: 20%;
+  }
+
+  .social img{
+    max-width: 46px;
+  }
+
+  ul.nav {
+    margin: 2% 0;
+  }
+
+  ul.nav li{
+    margin: 0;
+  }
+  ul.nav .home{
+    width: 30%;
+  }
+  ul.nav .portfolio{
+    width: 25%;
+    text-align: center;
+  } 
+  ul.nav .contact{
+    width: 35%;
+    text-align: right;
+  }
+  .text_container h1{
+    font-size: 1.4em;
+  }
+}
+
+/* at 455 pixels, make each nav link its own line*/
+@media screen and (max-width: 455px){
+  ul.nav .home{
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  ul.nav .portfolio{
+    width: 100%;
+    margin-bottom: 3%;
+    text-align: left;
+  }
+  
+  ul.nav .contact{
+    width: 100%;
+    text-align: left;
+  }
+
+  .text_container h1{
+    font-size: 1.4em;
+  }
+  .copyright{
+    font-size: 0.8em;
+  }
+}
